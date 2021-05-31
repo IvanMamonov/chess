@@ -1,214 +1,100 @@
 ﻿<Window x:Class="WPFM.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Калькулятор" Height="500" Width="500">
-    <Grid x:Name="LayoutRoot" Background="White">
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
+        Title="Калькулятор" Height="1000" Width="1000">
+    <Grid Name="MainGrid" MinWidth="800" MinHeight="800" Height="800" HorizontalAlignment="Left" Margin="100,0,0,0" Width="800">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button Background="Black" Grid.Column="1" Grid.Row="0" Content="" />
-        <Button Grid.Column="6" Grid.Row="1" Content="" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="53,0,0,0" />
-        <Button Grid.Column="3" Grid.Row="0" Content="" Background="black" BorderBrush="#FF784747" />
-        <Button Grid.Column="4" Grid.Row="0" Content="" Background="Gray" BorderBrush="#FF784747" />
-        <Button Grid.Column="7" Grid.Row="0" Background="black" BorderBrush="#FF784747" />
-        <Button Grid.Row="0" Content="" Background="Gray" BorderBrush="#FF784747" />
-        <Button Grid.Column="5" Grid.Row="0" Content="" Background="black" BorderBrush="#FF784747" />
-        <Button Grid.Column="6" Grid.Row="0" Content="" Background="Gray" BorderBrush="#FF784747" />
-        <Button Background="Black" Grid.Column="1" Grid.Row="2" Margin="0,1,0,0" >
-            <Grid x:Name="LayoutRoot_Copy1" Background="White" Height="469" Width="492">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Button Background="Black" Grid.Column="1" Grid.Row="0" Content="" />
-                <Button Grid.Column="6" Grid.Row="1" Content="" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="53,0,0,0" />
-                <Button Grid.Column="3" Grid.Row="0" Content="" Background="black" BorderBrush="#FF784747" />
-                <Button Grid.Column="4" Grid.Row="0" Content="" Background="Gray" BorderBrush="#FF784747" />
-                <Button Grid.Column="7" Grid.Row="0" Background="black" BorderBrush="#FF784747" />
-                <Button Grid.Row="0" Content="" Background="Gray" BorderBrush="#FF784747" />
-                <Button Grid.Column="5" Grid.Row="0" Content="" Background="black" BorderBrush="#FF784747" />
-                <Button Grid.Column="6" Grid.Row="0" Content="" Background="Gray" BorderBrush="#FF784747" />
-                <Button Background="Black" Grid.Column="1" Grid.Row="2" Content="" Margin="0,1,0,0" />
-                <Button Grid.Column="2" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" RenderTransformOrigin="0.497,0.506" Margin="0,1,0,0" />
-                <Button Grid.Column="3" Grid.Row="2" Content="" Background="black" BorderBrush="#FF784747" Margin="0,1,0,0" />
-                <Button Grid.Column="4" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,1,0,0" />
-                <Button Grid.Column="7" Grid.Row="2" Background="black" BorderBrush="#FF784747" Margin="0,1,0,0" />
-                <Button Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,1,0,0" />
-                <Button Grid.Column="5" Grid.Row="2" Content="" Background="black" BorderBrush="#FF784747" Margin="0,0,0,1" />
-                <Button Grid.Column="6" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,0,0,1" />
-                <Button Grid.Row="1" Content="" Background="Gray" BorderBrush="#FF784747" Grid.Column="1" />
-                <Button Background="Black" Grid.Row="1" Content="" Margin="0,1,0,52" Grid.RowSpan="2" />
-                <Button Background="Black" Grid.Column="2" Grid.Row="1" Content="" Margin="1,0,0,0" />
-                <Button Background="Black" Grid.Column="4" Grid.Row="1" Content="" Margin="0,0,1,0" />
-                <Button Background="Black" Grid.Column="6" Grid.Row="1" Content="" Margin="0,1,1,52" Grid.RowSpan="2" />
-                <Button Grid.Column="3" Grid.Row="1" Background="Gray" BorderBrush="#FF784747" >
-                    <Button Content="" Background="Gray" BorderBrush="#FF784747" Height="52" Width="55" />
-                </Button>
-                <Button Grid.Column="4" Grid.Row="1" Content="" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="54,1,1,52" Grid.RowSpan="2" />
-                <Button Grid.Column="2" Content="" Background="Gray" BorderBrush="#FF784747" />
-                <Button Grid.Row="3" Content="" Background="Gray" BorderBrush="#FF784747" Grid.Column="1" />
-                <Button Background="Black" Grid.Row="3" Content="" />
-                <Button Background="Black" Grid.Column="2" Grid.Row="3" Content="" Margin="1,0,0,0" />
-                <Button Background="Black" Grid.Column="4" Grid.Row="3" Content="" Margin="0,0,1,0" />
-                <Button Background="Black" Grid.Column="6" Grid.Row="2" Content="" Margin="1,52,0,1" Grid.RowSpan="2" />
-                <Button Grid.Column="3" Grid.Row="3" Background="Gray" BorderBrush="#FF784747" />
-                <Button Grid.Column="5" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,52,0,1" Grid.RowSpan="2" />
-                <Button Grid.Column="6" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="53,52,0,1" Grid.RowSpan="2" />
-            </Grid>
-        </Button>
-        <Button Grid.Column="2" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" RenderTransformOrigin="0.497,0.506" Margin="0,1,0,0" />
-        <Button Grid.Column="3" Grid.Row="2" Content="" Background="black" BorderBrush="#FF784747" Margin="0,1,0,0" />
-        <Button Grid.Column="4" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,1,0,0" />
-        <Button Grid.Column="7" Grid.Row="2" Background="black" BorderBrush="#FF784747" Margin="0,1,0,0" />
-        <Button Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,1,0,0" />
-        <Button Grid.Column="5" Grid.Row="2" Content="" Background="black" BorderBrush="#FF784747" Margin="0,0,0,1" />
-        <Button Grid.Column="6" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,0,0,1" />
-        <Button Grid.Row="1" Content="" Background="Gray" BorderBrush="#FF784747" Grid.Column="1" />
-        <Button Background="Black" Grid.Row="1" Content="" Margin="0,1,0,52" Grid.RowSpan="2" />
-        <Button Background="Black" Grid.Column="2" Grid.Row="1" Content="" Margin="1,0,0,0" />
-        <Button Background="Black" Grid.Column="4" Grid.Row="1" Content="" Margin="0,0,1,0" />
-        <Button Background="Black" Grid.Column="6" Grid.Row="1" Content="" Margin="0,1,1,52" Grid.RowSpan="2" />
-        <Button Grid.Column="3" Grid.Row="1" Background="Gray" BorderBrush="#FF784747" >
-            <Button Content="" Background="Gray" BorderBrush="#FF784747" Height="52" Width="55" />
-        </Button>
-        <Button Grid.Column="4" Grid.Row="1" Content="" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="54,1,1,52" Grid.RowSpan="2" />
-        <Button Grid.Column="2" Content="" Background="Gray" BorderBrush="#FF784747" />
-        <Button Grid.Row="3" Content="" Background="Gray" BorderBrush="#FF784747" Grid.Column="1" />
-        <Button Background="Black" Grid.Row="3" Content="" />
-        <Button Background="Black" Grid.Column="2" Grid.Row="3" Content="" Margin="1,0,0,0" />
-        <Button Background="Black" Grid.Column="4" Grid.Row="3" Content="" Margin="0,0,1,0" />
-        <Button Background="Black" Grid.Column="6" Grid.Row="2" Content="" Margin="1,52,0,1" Grid.RowSpan="2" />
-        <Button Grid.Column="3" Grid.Row="3" Background="Gray" BorderBrush="#FF784747" />
-        <Button Grid.Column="5" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,52,0,1" Grid.RowSpan="2" />
-        <Button Grid.Column="6" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="53,52,0,1" Grid.RowSpan="2" />
-        <Grid x:Name="LayoutRoot_Copy" Background="White" Grid.ColumnSpan="9" Grid.RowSpan="9">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Button Background="Black" Grid.Column="1" Grid.Row="0" Content="" />
-            <Button Grid.Column="6" Grid.Row="1" Content="" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="53,0,0,0" />
-            <Button Grid.Column="3" Grid.Row="0" Content="" Background="black" BorderBrush="#FF784747" />
-            <Button Grid.Column="4" Grid.Row="0" Content="" Background="Gray" BorderBrush="#FF784747" />
-            <Button Grid.Column="7" Grid.Row="0" Background="black" BorderBrush="#FF784747" />
-            <Button Grid.Row="0" Content="" Background="Gray" BorderBrush="#FF784747" />
-            <Button Grid.Column="5" Grid.Row="0" Content="" Background="black" BorderBrush="#FF784747" />
-            <Button Grid.Column="6" Grid.Row="0" Content="" Background="Gray" BorderBrush="#FF784747" />
-            <Button Background="Black" Grid.Column="1" Grid.Row="2" Content="" Margin="0,1,0,0" />
-            <Button Grid.Column="2" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" RenderTransformOrigin="0.497,0.506" Margin="0,1,0,0" />
-            <Button Grid.Column="3" Grid.Row="2" Content="" Background="black" BorderBrush="#FF784747" Margin="0,1,0,0" />
-            <Button Grid.Column="4" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,1,0,0" />
-            <Button Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,1,0,0" />
-            <Button Grid.Column="5" Grid.Row="2" Background="black" BorderBrush="#FF784747" Margin="0,0,0,1" >
-                <Button Background="black" BorderBrush="#FF784747" Height="52" Width="54" />
-            </Button>
-            <Button Grid.Column="6" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,0,0,1" />
-            <Button Grid.Row="1" Content="" Background="Gray" BorderBrush="#FF784747" Grid.Column="1" />
-            <Button Background="Black" Grid.Row="1" Content="" Margin="0,1,0,52" Grid.RowSpan="2" />
-            <Button Background="Black" Grid.Column="2" Grid.Row="1" Content="" Margin="1,0,0,0" />
-            <Button Background="Black" Grid.Column="4" Grid.Row="1" Content="" Margin="0,0,1,0" />
-            <Button Background="Black" Grid.Column="6" Grid.Row="1" Content="" Margin="0,1,1,52" Grid.RowSpan="2" />
-            <Button Grid.Column="3" Grid.Row="1" Background="Gray" BorderBrush="#FF784747" >
-                <Button Content="" Background="Gray" BorderBrush="#FF784747" Height="52" Width="55" />
-            </Button>
-            <Button Grid.Column="4" Grid.Row="1" Content="" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="54,1,1,52" Grid.RowSpan="2" />
-            <Button Grid.Column="2" Content="" Background="Gray" BorderBrush="#FF784747" />
-            <Button Grid.Row="3" Content="" Background="Gray" BorderBrush="#FF784747" Grid.Column="1" />
-            <Button Background="Black" Grid.Row="3" Content="" />
-            <Button Background="Black" Grid.Column="2" Grid.Row="3" Content="" Margin="1,0,0,0" />
-            <Button Background="Black" Grid.Column="4" Grid.Row="3" Content="" Margin="0,0,1,0" />
-            <Button Background="Black" Grid.Column="6" Grid.Row="2" Content="" Margin="1,52,0,1" Grid.RowSpan="2" />
-            <Button Grid.Column="3" Grid.Row="3" Background="Gray" BorderBrush="#FF784747" />
-            <Button Grid.Column="5" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Margin="0,52,0,1" Grid.RowSpan="2" />
-            <Button Grid.Column="6" Grid.Row="2" Content="" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="53,52,0,1" Grid.RowSpan="2" />
-            <Button Grid.Column="7" Grid.Row="3" Background="black" BorderBrush="#FF784747" Margin="0,51,0,1" Grid.RowSpan="2" />
-            <Button Grid.Column="7" Grid.Row="2" Background="black" BorderBrush="#FF784747" Margin="0,0,0,1" />
-            <Button Grid.Column="5" Grid.Row="4" Background="black" BorderBrush="#FF784747" Margin="1,0,0,0" />
-            <Button Grid.Column="3" Grid.Row="3" Background="black" BorderBrush="#FF784747" Margin="0,51,1,1" Grid.RowSpan="2" />
-            <Button Grid.Column="1" Grid.Row="4" Background="black" BorderBrush="#FF784747" Margin="0,0,1,0" />
-            <Button Grid.Column="6" Grid.Row="5" Background="black" BorderBrush="#FF784747" Margin="1,0,0,0" />
-            <Button Grid.Column="4" Grid.Row="5" Background="black" BorderBrush="#FF784747" Margin="1,0,0,0" />
-            <Button Grid.Column="2" Grid.Row="5" Background="black" BorderBrush="#FF784747" Margin="0,0,1,0" />
-            <Button Grid.Row="5" Background="black" BorderBrush="#FF784747" />
-            <Button Grid.Column="7" Grid.Row="6" Background="black" BorderBrush="#FF784747" />
-            <Button Grid.Column="5" Grid.Row="6" Background="black" BorderBrush="#FF784747" Margin="1,0,0,0" />
-            <Button Grid.Column="3" Grid.Row="6" Background="black" BorderBrush="#FF784747" Margin="1,0,0,0" />
-            <Button Grid.Column="1" Grid.Row="6" Background="black" BorderBrush="#FF784747" Margin="1,0,0,0" />
-            <Button Grid.Column="6" Grid.Row="7" Background="black" BorderBrush="#FF784747" Margin="1,0,0,0" />
-            <Button Grid.Column="4" Grid.Row="7" Background="black" BorderBrush="#FF784747" Margin="1,0,0,0" />
-            <Button Grid.Column="2" Grid.Row="7" Background="black" BorderBrush="#FF784747" Margin="1,0,0,0" />
-            <Button Grid.Row="7" Background="black" BorderBrush="#FF784747" />
-            <Button Grid.Row="3" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="0,51,54,1" Grid.RowSpan="2" />
-            <Button Grid.Column="2" Grid.Row="4" Background="Gray" BorderBrush="#FF784747" />
-            <Button Grid.Column="4" Grid.Row="4" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="1,0,54,0" />
-            <Button Grid.Column="6" Grid.Row="4" Background="Gray" BorderBrush="#FF784747" />
-            <Button Grid.Column="7" Grid.Row="5" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="0,0,53,0" />
-            <Button Grid.Column="5" Grid.Row="5" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="1,0,54,0" />
-            <Button Grid.Column="2" Grid.Row="4" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="54,51,1,1" Grid.RowSpan="2" />
-            <Button Grid.Row="5" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="53,0,1,0" />
-            <Button Grid.Row="6" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="0,0,54,0" />
-            <Button Grid.Column="2" Grid.Row="5" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="1,51,54,1" Grid.RowSpan="2" />
-            <Button Grid.Column="4" Grid.Row="5" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="1,51,54,1" Grid.RowSpan="2" />
-            <Button Grid.Column="6" Grid.Row="5" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="1,51,53,1" Grid.RowSpan="2" />
-            <Button Grid.Column="1" Grid.Row="7" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="1,0,54,0" />
-            <Button Grid.Column="3" Grid.Row="7" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="1,0,54,0" />
-            <Button Grid.Column="5" Grid.Row="7" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="1,0,54,0" />
-            <Button Grid.Column="6" Grid.Row="7" Background="Gray" BorderBrush="#FF784747" Grid.ColumnSpan="2" Margin="54,0,0,0" />
-        </Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="button_00" Grid.Row="0" Grid.Column="0" Background="White"/>
+        <Button x:Name="button_01" Grid.Row="0" Grid.Column="1" Background="Black"/>
+        <Button x:Name="button_02" Grid.Row="0" Grid.Column="2" Background="White"/>
+        <Button x:Name="button_03" Grid.Row="0" Grid.Column="3" Background="Black"/>
+        <Button x:Name="button_04" Grid.Row="0" Grid.Column="4" Background="White"/>
+        <Button x:Name="button_05" Grid.Row="0" Grid.Column="5" Background="Black"/>
+        <Button x:Name="button_06" Grid.Row="0" Grid.Column="6" Background="White"/>
+        <Button x:Name="button_07" Grid.Row="0" Grid.Column="7" Background="Black"/>
+
+        <Button x:Name="button_10" Grid.Row="1" Grid.Column="0" Background="Black"/>
+        <Button x:Name="button_11" Grid.Row="1" Grid.Column="1" Background="White"/>
+        <Button x:Name="button_12" Grid.Row="1" Grid.Column="2" Background="Black"/>
+        <Button x:Name="button_13" Grid.Row="1" Grid.Column="3" Background="White"/>
+        <Button x:Name="button_14" Grid.Row="1" Grid.Column="4" Background="Black"/>
+        <Button x:Name="button_15" Grid.Row="1" Grid.Column="5" Background="White"/>
+        <Button x:Name="button_16" Grid.Row="1" Grid.Column="6" Background="Black"/>
+        <Button x:Name="button_17" Grid.Row="1" Grid.Column="7" Background="White"/>
+
+        <Button x:Name="button_20" Grid.Row="2" Grid.Column="0" Background="White"/>
+        <Button x:Name="button_21" Grid.Row="2" Grid.Column="1" Background="Black"/>
+        <Button x:Name="button_22" Grid.Row="2" Grid.Column="2" Background="White"/>
+        <Button x:Name="button_23" Grid.Row="2" Grid.Column="3" Background="Black"/>
+        <Button x:Name="button_24" Grid.Row="2" Grid.Column="4" Background="White"/>
+        <Button x:Name="button_25" Grid.Row="2" Grid.Column="5" Background="Black"/>
+        <Button x:Name="button_26" Grid.Row="2" Grid.Column="6" Background="White"/>
+        <Button x:Name="button_27" Grid.Row="2" Grid.Column="7" Background="Black"/>
+
+        <Button x:Name="button_30" Grid.Row="3" Grid.Column="0" Background="Black"/>
+        <Button x:Name="button_31" Grid.Row="3" Grid.Column="1" Background="White"/>
+        <Button x:Name="button_32" Grid.Row="3" Grid.Column="2" Background="Black"/>
+        <Button x:Name="button_33" Grid.Row="3" Grid.Column="3" Background="White"/>
+        <Button x:Name="button_34" Grid.Row="3" Grid.Column="4" Background="Black"/>
+        <Button x:Name="button_35" Grid.Row="3" Grid.Column="5" Background="White"/>
+        <Button x:Name="button_36" Grid.Row="3" Grid.Column="6" Background="Black"/>
+        <Button x:Name="button_37" Grid.Row="3" Grid.Column="7" Background="White"/>
+
+        <Button x:Name="button_40" Grid.Row="4" Grid.Column="0" Background="White"/>
+        <Button x:Name="button_41" Grid.Row="4" Grid.Column="1" Background="Black"/>
+        <Button x:Name="button_42" Grid.Row="4" Grid.Column="2" Background="White"/>
+        <Button x:Name="button_43" Grid.Row="4" Grid.Column="3" Background="Black"/>
+        <Button x:Name="button_44" Grid.Row="4" Grid.Column="4" Background="White"/>
+        <Button x:Name="button_45" Grid.Row="4" Grid.Column="5" Background="Black"/>
+        <Button x:Name="button_46" Grid.Row="4" Grid.Column="6" Background="White"/>
+        <Button x:Name="button_47" Grid.Row="4" Grid.Column="7" Background="Black"/>
+
+        <Button x:Name="button_50" Grid.Row="5" Grid.Column="0" Background="Black"/>
+        <Button x:Name="button_51" Grid.Row="5" Grid.Column="1" Background="White"/>
+        <Button x:Name="button_52" Grid.Row="5" Grid.Column="2" Background="Black"/>
+        <Button x:Name="button_53" Grid.Row="5" Grid.Column="3" Background="White"/>
+        <Button x:Name="button_54" Grid.Row="5" Grid.Column="4" Background="Black"/>
+        <Button x:Name="button_55" Grid.Row="5" Grid.Column="5" Background="White"/>
+        <Button x:Name="button_56" Grid.Row="5" Grid.Column="6" Background="Black"/>
+        <Button x:Name="button_57" Grid.Row="5" Grid.Column="7" Background="White"/>
+
+        <Button x:Name="button_60" Grid.Row="6" Grid.Column="0" Background="White"/>
+        <Button x:Name="button_61" Grid.Row="6" Grid.Column="1" Background="Black"/>
+        <Button x:Name="button_62" Grid.Row="6" Grid.Column="2" Background="White"/>
+        <Button x:Name="button_63" Grid.Row="6" Grid.Column="3" Background="Black"/>
+        <Button x:Name="button_64" Grid.Row="6" Grid.Column="4" Background="White"/>
+        <Button x:Name="button_65" Grid.Row="6" Grid.Column="5" Background="Black"/>
+        <Button x:Name="button_66" Grid.Row="6" Grid.Column="6" Background="White"/>
+        <Button x:Name="button_67" Grid.Row="6" Grid.Column="7" Background="Black"/>
+
+        <Button x:Name="button_70" Grid.Row="7" Grid.Column="0" Background="Black"/>
+        <Button x:Name="button_71" Grid.Row="7" Grid.Column="1" Background="White"/>
+        <Button x:Name="button_72" Grid.Row="7" Grid.Column="2" Background="Black"/>
+        <Button x:Name="button_73" Grid.Row="7" Grid.Column="3" Background="White"/>
+        <Button x:Name="button_74" Grid.Row="7" Grid.Column="4" Background="Black"/>
+        <Button x:Name="button_75" Grid.Row="7" Grid.Column="5" Background="White"/>
+        <Button x:Name="button_76" Grid.Row="7" Grid.Column="6" Background="Black"/>
+        <Button x:Name="button_77" Grid.Row="7" Grid.Column="7" Background="White"/>
     </Grid>
 </Window>
